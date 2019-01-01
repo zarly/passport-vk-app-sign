@@ -22,7 +22,9 @@
   },
   "license": "MIT",
   "main": "./lib",
-  "dependencies": {},
+  "dependencies": {
+    "passport-strategy": "^1.0.0"
+  },
   "devDependencies": {
     "@types/passport-strategy": "^0.2.35",
     "chai": "1.x.x",
