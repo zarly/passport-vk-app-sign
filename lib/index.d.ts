@@ -1,5 +1,2 @@
 
-import Strategy from './strategy'
-
-export=Strategy;
-Strategy.Strategy = Strategy;
+export {Strategy} from './strategy'

@@ -1,6 +1,6 @@
 {
   "name": "passport-vk-app-sign",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vkontakte applications authentication strategy for Passport",
   "keywords": [
     "passport",
@@ -22,10 +22,9 @@
   },
   "license": "MIT",
   "main": "./lib",
-  "dependencies": {
-    "passport-strategy": "1.x.x"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/passport-strategy": "^0.2.35",
     "chai": "1.x.x",
     "chai-passport-strategy": "0.1.x",
     "expect": "^23.6.0",
