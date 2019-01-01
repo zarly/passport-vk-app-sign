@@ -7,13 +7,16 @@
 ## Install
 
 ```bash
-$ npm install passport-local
+$ npm install passport-vk-app-sign
 ```
 
 ## Usage
 
 ```js
-passport.use(new VkAppSignStrategy(
+passport.use(new VkAppSignStrategy({
+    secret: 'FgTxNdMzp7dgj2NPnEPv',
+    verbose: true,
+  },
   function(signedParams, req, done) {
     User.findOne({ userId: signedParams.viewer_id }, function (err, user) {
       if (err) { return done(err); }

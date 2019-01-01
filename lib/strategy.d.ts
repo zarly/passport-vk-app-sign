@@ -42,13 +42,14 @@ class Strategy extends BaseStrategy {
 	readonly name: string;
 	protected done: Function;
 	protected secret?: string;
+	protected fromReferrer: boolean;
 	protected disableVerification: boolean;
 	protected verbose: boolean;
 	protected logFunction: Function;
 
 	constructor (options: IStrategyOptions = {}, done: Function);
 
-	authenticate (req: Request, options?: any): void;
+	authenticate (req: Request): void;
 
 	static parseApiResult (apiResult: string) : {userInfo?: IUser, groupInfo?: IGroup};
 
