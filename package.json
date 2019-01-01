@@ -1,6 +1,6 @@
 {
   "name": "passport-vk-app-sign",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vkontakte applications authentication strategy for Passport",
   "keywords": [
     "passport",
