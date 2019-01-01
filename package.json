@@ -28,6 +28,7 @@
   "devDependencies": {
     "chai": "1.x.x",
     "chai-passport-strategy": "0.1.x",
+    "expect": "^23.6.0",
     "mocha": "^5.2.0"
   },
   "engines": {
