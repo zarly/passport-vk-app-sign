@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zarly/passport-vk-app-sign.svg?branch=master)](https://travis-ci.org/zarly/passport-vk-app-sign)
+
 # passport-vk-app-sign
 
 [Passport](http://passportjs.org/) strategy for authenticating [VK applications](https://vk.com/dev/manuals).
