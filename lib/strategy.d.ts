@@ -6,34 +6,11 @@ import config from '../config';
 
 interface IStrategyOptions {
 	secret?: string;
+	fromReferrer?: boolean;
 	disableVerification?: boolean;
 	verbose?: boolean;
 	logFunction?: Function;
 	name?: string;
-}
-
-interface IUser {
-	id: number;
-	first_name: string;
-	last_name: string;
-}
-
-interface IGroup {
-	id: number;
-	is_closed: number;
-	name: string;
-	photo_50: string;
-	photo_100: string;
-	photo_200: string;
-	screen_name: string;
-	type: string;
-}
-
-interface IApiResult {
-	response: [
-		[IUser],
-		[IGroup]
-	];
 }
 
 class Strategy extends BaseStrategy {
@@ -49,9 +26,7 @@ class Strategy extends BaseStrategy {
 
 	constructor (options: IStrategyOptions = {}, done: Function);
 
-	authenticate (req: Request): void;
-
-	static parseApiResult (apiResult: string) : {userInfo?: IUser, groupInfo?: IGroup};
+	authenticate (req: Request, options?: any): void;
 
 	static getUrlHash (urlString: string) : any;
 
