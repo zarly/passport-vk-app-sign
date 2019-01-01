@@ -1,0 +1,39 @@
+{
+  "name": "passport-vk-app-sign",
+  "version": "0.0.1",
+  "description": "Vkontakte applications authentication strategy for Passport",
+  "keywords": [
+    "passport",
+    "auth",
+    "authentication",
+    "vk",
+    "vkontakte"
+  ],
+  "author": {
+    "name": "Alexander Abramov",
+    "email": "abramov231@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zarly/passport-vk-app-sign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zarly/passport-vk-app-sign/issues"
+  },
+  "license": "MIT",
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x",
+    "chai-passport-strategy": "0.1.x"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
